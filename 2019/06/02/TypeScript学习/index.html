@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <title>TypeScript学习(一) | 阿楚的博客</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="阿楚的博客">
+    <meta name="author" content="huang">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="阿楚的博客" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">Github</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/ES6/" class="animsition-link">ES6<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/TypeScript/" class="animsition-link">TypeScript<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">阿楚的博客</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/isgoodday" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2019-06-02T03:24:47.000Z" itemprop="datePublished">
+          2019-06-02
+      </time>
+    
+    
+    | 
+    <a href='/tags/TypeScript/'>TypeScript</a>
+    
+    
+</span>
+                <h1>TypeScript学习(一)</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="TypeScript是Javasctipt超集，它为JS变量提供了类型，让JS的语法安全性大大提高。"><a href="#TypeScript是Javasctipt超集，它为JS变量提供了类型，让JS的语法安全性大大提高。" class="headerlink" title="TypeScript是Javasctipt超集，它为JS变量提供了类型，让JS的语法安全性大大提高。"></a>TypeScript是Javasctipt超集，它为JS变量提供了类型，让JS的语法安全性大大提高。</h3><ul>
+<li><p>TS文件后缀为 .ts</p>
+</li>
+<li><p>TS通过编译将TS文件转换为JS文件。</p>
+</li>
+<li><p>TS支持ES6以上的语法</p>
+</li>
+</ul>
+<h4 id="首先需要安装TS插件"><a href="#首先需要安装TS插件" class="headerlink" title="首先需要安装TS插件"></a>首先需要安装TS插件</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+
+<p>安装完毕后 ，我们可以使用一个tsc命令转换TS文件为JS文件</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc first.ts</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="定义一个TS变量"><a href="#定义一个TS变量" class="headerlink" title="定义一个TS变量"></a>定义一个TS变量</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a:string = <span class="string">'huanghao'</span></span><br></pre></td></tr></table></figure>
+
+<p>我们为<strong><code>变量a 的值</code></strong> 规定了数据类型 ，为string类型，假设我们将变量a的值改变</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a:string = <span class="number">123</span></span><br></pre></td></tr></table></figure>
+
+<p>抛出一个报错信息，不能将 123  分配给 String </p>
+<p>这大大减少了我们在代码编写时的错误率。</p>
+<p>将ts文件 通过 tsc first.ts 编译为frist.js文件  ,文件内容为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'huanghao'</span> ;</span><br></pre></td></tr></table></figure>
+
+<p>:值得注意的是，假设 我们的ts文件内容为</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a:string = <span class="number">123</span>   <span class="comment">//此时ts会抛出类型错误</span></span><br></pre></td></tr></table></figure>
+
+<p>尽管ts 抛出了类型错误，但是进行js文件转换却没有问题。转换为js后</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">123</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>TS定义类型</p>
+</blockquote>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> isBool:booleean = trur</span><br></pre></td></tr></table></figure>
+
+<h3 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> num:number = <span class="number">6</span>;</span><br><span class="line"><span class="comment">// 也可以写成如下进制格式</span></span><br><span class="line"><span class="keyword">let</span> num:number = <span class="number">0xf00d</span>;</span><br><span class="line"><span class="keyword">let</span> num:number = <span class="number">0b1010</span>;</span><br><span class="line"><span class="keyword">let</span> num:number = <span class="number">0o744</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> str:string = <span class="string">'Hello World'</span>;</span><br><span class="line">str = <span class="string">'Goodbay World'</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//当然可以也写成模板字符串的格式</span></span><br><span class="line"><span class="keyword">let</span> name:string=<span class="string">'World'</span></span><br><span class="line"><span class="keyword">let</span> str:string = <span class="string">`Hello <span class="subst">$&#123;name&#125;</span>`</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr:number[] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]  <span class="comment">//定义了arr数值的元素必须是Number类型</span></span><br></pre></td></tr></table></figure>
+
+<p>通常，单一数据类型不能满足我们的需求，我们需要用到联合数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr2:(string|number)[] = [<span class="string">'world'</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="string">'huang'</span>,<span class="string">'hao'</span>]</span><br></pre></td></tr></table></figure>
+
+<p>现在，数值的元素可以是数值或字符串了。</p>
+<h3 id="另一种定义方式"><a href="#另一种定义方式" class="headerlink" title="另一种定义方式"></a>另一种定义方式</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr3:<span class="built_in">Array</span>&lt;number&gt; = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>) <span class="comment">//单一数据类型</span></span><br><span class="line"><span class="keyword">let</span> arr4:<span class="built_in">Array</span>&lt;number|string&gt;=[<span class="string">'world'</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="string">'huang'</span>,<span class="string">'hao'</span>] <span class="comment">//联合数据类型</span></span><br><span class="line">arr4[<span class="number">10</span>]=<span class="number">666</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="元祖-Tuple"><a href="#元祖-Tuple" class="headerlink" title="元祖 Tuple"></a>元祖 Tuple</h3><p><em>允许表示一个<strong><code>已知元素数量和类型</code></strong>的数组</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> newArr:[string,number];</span><br><span class="line">newArr= [<span class="string">'World'</span>,<span class="number">666</span>] <span class="comment">//必须包含初始化的数据类型,以及元素的位置需要对应</span></span><br></pre></td></tr></table></figure>
+
+<p>并且,当访问已知索引的类型将会得到正确的类型，当访问一个越界索引，将会报错</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">newArr[<span class="number">3</span>]   <span class="comment">//报错</span></span><br></pre></td></tr></table></figure>
+
+<p>这时，我们需要联合类型</p>
+<h3 id="Any"><a href="#Any" class="headerlink" title="Any"></a>Any</h3><p>any表示可以是任意类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> every:any =<span class="number">666</span>;</span><br><span class="line">every=<span class="string">'erery'</span>;</span><br><span class="line">every=<span class="literal">true</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>当我们规定一个数值可以包含所有类型的值时,可以使用any类型</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr:any[]=[<span class="number">1</span>,<span class="number">2</span>,<span class="literal">true</span>,<span class="string">'huang'</span>]</span><br></pre></td></tr></table></figure>
+
+<p>现在，这个数值可以随意添加元素</p>
+<h3 id="Void"><a href="#Void" class="headerlink" title="Void"></a>Void</h3><p>它表示没有任何类型，通常，当一个函数没有返回值时，我们将一个这个返回值类型定义为void</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fn = ():<span class="function"><span class="params">void</span> =&gt;</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>而将一个变量规定为void类型则没有什么意义，因为你<strong><code>只能为它赋予undefined和null</code></strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> a:<span class="keyword">void</span>=<span class="literal">undefined</span> || <span class="literal">null</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Null和undefined"><a href="#Null和undefined" class="headerlink" title="Null和undefined"></a>Null和undefined</h3><p>这两个类型只能赋值自身类型的唯一值</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> un:<span class="literal">undefined</span>=<span class="literal">undefined</span></span><br><span class="line"><span class="keyword">let</span> nu:<span class="literal">null</span>=<span class="literal">null</span></span><br></pre></td></tr></table></figure>
+
+<p>undefinde和null值是可以赋值给任何类型的变量，这是极其不好的。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> name1:string= <span class="literal">undefined</span>;</span><br><span class="line"><span class="keyword">let</span> num:number = <span class="literal">undefined</span>;</span><br></pre></td></tr></table></figure>
+
+<p>官方建议我们指定了<code>--strictNullChecks</code>标记，<code>null</code>和<code>undefined</code>就只能赋值给<code>void</code>和它们各自的类型。</p>
+<p>但是–strictNullChecks`标记默认是关闭的，所以我们需要开启它</p>
+<p>在根目录下新建一个<strong><code>tsconfig.json</code></strong>，TypeScript 将会把此目录下（和子目录）的所有 <code>.ts</code> 文件做为编译上下文的一部分，它还会包含一部分默认的编译选项。我们就是在json文件在修改这些编译选项</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">"compilerOptions"</span>: &#123;</span><br><span class="line">     <span class="string">"strictNullChecks"</span>:<span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+
+<p>现在，我们返回ts文件，可以看到出来它们自身和void类型被辅助undefined和null，其它的类型都抛出了错误</p>
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p>通常，我们使用接口的方式来对对象的属性类型进行定义。</p>
+<p>定义一个接口</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface  ObjConfig &#123;</span><br><span class="line">  readonly id:number,  <span class="comment">//readonly 表示只读属性 不允许更改</span></span><br><span class="line">  name:string   <span class="comment">//接口 这种方式定义的属性是必需属性,属性必须对应规定类型</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用此接口，注意 : 定义的接口比定义的变量少一些或多一些属性都不行</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//good</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    id:<span class="number">1</span>,</span><br><span class="line">    name:<span class="string">'hao'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//bad 报错</span></span><br><span class="line"><span class="keyword">let</span> obj = &#123;</span><br><span class="line">    id:<span class="number">1</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="可选属性"><a href="#可选属性" class="headerlink" title="可选属性"></a>可选属性</h4><p>我们可以使用定义接口的可选属性，这样我们定义的变量就可以在需要时获取属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">interface  ObjConfig &#123;</span><br><span class="line">  readonly id:number,  <span class="comment">//readonly 表示只读属性 不允许更改</span></span><br><span class="line">   name:string   <span class="comment">//接口 这种方式定义的属性是必需属性,属性必须对应规定类型</span></span><br><span class="line">   age？：number <span class="comment">//定义可选属性</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>当我们定义一个对象</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ok</span></span><br><span class="line"><span class="keyword">let</span> obj:ObjConfig = &#123;</span><br><span class="line">    id:<span class="number">1</span>,</span><br><span class="line">    name:<span class="string">'hao'</span>,</span><br><span class="line">    age:<span class="number">21</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ok</span></span><br><span class="line"><span class="keyword">let</span> newObj:ObjConfig = &#123;</span><br><span class="line">     id:<span class="number">1</span>,</span><br><span class="line">    name:<span class="string">'hao'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="只读属性"><a href="#只读属性" class="headerlink" title="只读属性"></a>只读属性</h4><p>在定义接口时，为属性添加一个readonly来指定只读属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">interface  ObjConfig &#123;</span><br><span class="line">  readonly id:number,  <span class="comment">//readonly 表示只读属性 不允许更改</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> obj:ObjConfig = &#123;</span><br><span class="line">    id:<span class="number">123</span></span><br><span class="line">&#125;</span><br><span class="line">obj.id <span class="comment">//报错，id是只读属性</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="任意属性"><a href="#任意属性" class="headerlink" title="任意属性"></a>任意属性</h4><p>当我们想在变量中不受接口限制，定义多个任意属性</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">interface  ObjConfig &#123;</span><br><span class="line">    name:string   </span><br><span class="line">    myage ?: boolean </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">let</span> obj:ObjConfig = &#123;</span><br><span class="line">        other:<span class="number">123</span>  <span class="comment">//报错，接口未定义此属性</span></span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+
+<p> <strong>修正:</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">interface  ObjConfig &#123;</span><br><span class="line">    name:string,    <span class="comment">//必需属性</span></span><br><span class="line">    [propName:string] : any <span class="comment">//除了必需属性,可添加任意属性及类型</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">let</span> obj:ObjConfig = &#123;</span><br><span class="line">        name:<span class="string">'hao'</span>,  <span class="comment">//必需属性 </span></span><br><span class="line">        other:<span class="number">123</span>  </span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>对于函数的类型定义，我们需要关注两个方面，<strong>参数类型</strong>和<strong>返回值</strong>的类型</p>
+<p>1.普通函数定义数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">                 参数类型        返回值类型      </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn1</span> (<span class="params">x:number,y:string</span>) :<span class="title">any</span>  </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2.箭头函数定义数据类型*</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fn2 = (x:number,<span class="attr">y</span>:string) :<span class="function"><span class="params">any</span>  =&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> x+y</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//表示函数没有返回值</span></span><br><span class="line"><span class="keyword">const</span> fn= ():<span class="function"><span class="params">void</span> =&gt;</span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>3.推断类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//fn 函数名  (x:number,y:number)对参数的类型定义  </span></span><br><span class="line"><span class="comment">//number 对返回值的类型定义   function() &#123;return 100&#125; 函数体</span></span><br><span class="line"><span class="keyword">let</span> fn:<span class="function">(<span class="params">x:number,y:number</span>) =&gt;</span> number = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="keyword">return</span> <span class="number">100</span>&#125;</span><br><span class="line"><span class="keyword">let</span> fn:<span class="function">(<span class="params">x:number,y:string</span>) =&gt;</span>string = <span class="function"><span class="params">()</span>=&gt;</span> <span class="string">'huanghao'</span></span><br></pre></td></tr></table></figure>
+
+<p>4.<strong>使用接口定义函数数据类型(推荐)</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">interface Fn&#123;</span><br><span class="line">       参数类型           返回值类型</span><br><span class="line">    (x:number,<span class="attr">y</span>:string) : string</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//使用定义的接口 </span></span><br><span class="line"><span class="keyword">let</span> fn:Fn = <span class="function">(<span class="params">x , y</span>)=&gt;</span>&#123;<span class="keyword">return</span> x+y &#125;</span><br></pre></td></tr></table></figure>
+
+<p>5.使用泛型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义泛型 不知道我们要的数据是何种类型，那么就定义一个泛型</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span> &lt;<span class="title">T</span>,<span class="title">U</span>&gt; (<span class="params">n:T,m:U</span>):<span class="title">any</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">100</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//调用</span></span><br><span class="line">fn&lt;number,string&gt;(<span class="number">10</span>,<span class="string">'huanghao'</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>或者是使用接口定义泛型</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">interface  Fn&lt;T,U,E&gt;&#123;</span><br><span class="line">    (n:T,<span class="attr">myage</span>:U): E</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> fn9:Fn1&lt;number,string,any&gt; = <span class="function">(<span class="params">n,m</span>) =&gt;</span><span class="number">10000</span></span><br></pre></td></tr></table></figure>
+
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    
+    <a class="pull-right" href="/2019/06/02/Promise/">
+        Promise →
+    </a>
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By huang. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/isgoodday" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+      
+</body>
+</html>
