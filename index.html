@@ -93,7 +93,11 @@
 				    
 				    <li><a href="/categories/ES6/" class="animsition-link">ES6<small>(1)</small></a></li>
 				    
+				    <li><a href="/categories/React/" class="animsition-link">React<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/TypeScript/" class="animsition-link">TypeScript<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Vue/" class="animsition-link">Vue<small>(2)</small></a></li>
 				    
 				</ul>
         	</li>
@@ -209,6 +213,140 @@
 
 <section id="intro">
     <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/06/03/React学习笔记/">React学习笔记</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-06-03T06:17:04.000Z" itemprop="datePublished">
+          2019-06-03
+      </time>
+    
+    
+    | 
+    <a href='/tags/React/'>React</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        React的使用由于recat的jsx语法浏览器不支持 ，所以需要搭建脚手架来创建开发环境
+创建一个react脚手架 
+1234$ npm install -g create-react-app$ create-react-app your-app或$ npx create-react-app 项目名称
+
+安装脚手架会安装三个东西
+
+react:  react的顶级库
+
+
+react-dom: 将jsx语法转换为浏览器能识别的语法。因为
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/06/03/React学习笔记/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/06/03/Vue学习笔记/">Vue学习笔记</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-06-03T06:12:45.000Z" itemprop="datePublished">
+          2019-06-03
+      </time>
+    
+    
+    | 
+    <a href='/tags/Vue/'>Vue</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        Vue实例每个Vue程序都要进行实例化之后使用，实例有两种。
+
+一个是Vue实例
+
+一个是组件实例。
+
+对于Vue的插件，比如router和resource也有实例，称其为插件实例。
+
+
+对于Vue的MVVM视图的解析对于M-V-VM模型，由M-V-C模型衍生。
+只不过M-V-C中的C在M-V-VM中变为了VM。在M-V-VM中VM就是逻辑操作。通过VM,我们去控制视图和数据之间 的变化。
+构建一个Vue实例逐步解析
+123456789
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/06/03/Vue学习笔记/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2019/06/03/Vue的响应式原理/">Vue的响应式原理</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2019-06-03T06:04:27.000Z" itemprop="datePublished">
+          2019-06-03
+      </time>
+    
+    
+    | 
+    <a href='/tags/Vue原理/'>Vue原理</a>,
+    
+    <a href='/tags/Vue/'>Vue</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        深入响应式原理
+当视图模型(VM)中的数据模型(M)发生改变时，视图(V)就会进行更新
+底层原理：通过数据劫持和订阅发布的形式来进行数据状态的管理
+  数据劫持的核心使用的是ES5的方法(Object.defineProperty)，这个方法不支持ie8及以下
+Object.defineProperty(obj,prop,descriptot) 
+大致先说明下，它是做什么是？
+为obj对象定义或修改&quot;属性&quot;，并且返回
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2019/06/03/Vue的响应式原理/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
         
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
