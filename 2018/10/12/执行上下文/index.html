@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>阿楚的博客</title>
+  <title>执行上下文 | 阿楚的博客</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -59,7 +59,7 @@
 </head>
 
 <!--
-<body class="home-template">
+<body class="post-template">
 -->
 <body id="index" class="lightnav animsition">
 
@@ -180,176 +180,12 @@
         <!-- ============================ Header & Logo bar =========================== -->
 
 
-      <!-- ============================ Hero Image =========================== -->
-
-<section id="hero" class="scrollme">
-    <div class="container-fluid element-img" style="background: url(/img/bg_img1.jpg) no-repeat center center fixed;background-size: cover">
-        <div class="row">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
-                <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
-                    <div>
-                        
-                        <h2></h2>
-                        <p>每一个不曾起舞的日子都是对生命的辜负。</p>
-                        
-
-                    </div>
-                </div>
-            </div>
-            <!-- // .col-md-12 -->
-        </div>
-        <div class="herofade beige-dk"></div>
-    </div>
-</section>
-
-<!-- Height spacing helper -->
-<div class="heightblock"></div>
-<!-- // End height spacing helper -->
-
-<!-- ============================ END Hero Image =========================== -->
-<!-- ============================ Content =========================== -->
-
+      
 <section id="intro">
     <div class="container">
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2019/06/02/TypeScript学习/">TypeScript学习(一)</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2019-06-02T03:24:47.000Z" itemprop="datePublished">
-          2019-06-02
-      </time>
-    
-    
-    | 
-    <a href='/tags/TypeScript/'>TypeScript</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        TypeScript是Javasctipt超集，它为JS变量提供了类型，让JS的语法安全性大大提高。
-TS文件后缀为 .ts
-
-TS通过编译将TS文件转换为JS文件。
-
-TS支持ES6以上的语法
-
-
-首先需要安装TS插件1npm install -g typescript
-
-安装完毕后 ，我们可以使用一个tsc命令转换TS文件为JS文件
-1tsc first.ts
-
-
-定义一个TS变量1let a:string = 'huanghao'
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2019/06/02/TypeScript学习/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2019/02/02/Promise/">Promise</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2019-02-02T02:56:04.000Z" itemprop="datePublished">
-          2019-02-02
-      </time>
-    
-    
-    | 
-    <a href='/tags/Javascript/'>Javascript</a>,
-    
-    <a href='/tags/异步流程/'>异步流程</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        对于异步的解决方案
-PromisePromise是ES6新增的内置对象，通常使用Promise构造函数创建，Promise实例，解决异步问题。
- 1.Promise构造函数必须接收一个函数作为参数，我将其称为executor函数，executor函数也可以接收两个参数，resolve和reject，它们是两个函数`，由ECMAScript运行环境提供，无需自己部署。
-1234//执行Promise函数，它返回一个promise实例对象l
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2019/02/02/Promise/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2019/01/03/Vue的响应式原理/">Vue的响应式原理</a></h3>
-                    <span>
-                        <span class="post-meta">
-      <time datetime="2019-01-03T06:04:27.000Z" itemprop="datePublished">
-          2019-01-03
-      </time>
-    
-    
-    | 
-    <a href='/tags/Vue/'>Vue</a>,
-    
-    <a href='/tags/Vue原理/'>Vue原理</a>
-    
-    
-</span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        深入响应式原理
-当视图模型(VM)中的数据模型(M)发生改变时，视图(V)就会进行更新
-底层原理：通过数据劫持和订阅发布的形式来进行数据状态的管理
-  数据劫持的核心使用的是ES5的方法(Object.defineProperty)，这个方法不支持ie8及以下
-Object.defineProperty(obj,prop,descriptot) 
-大致先说明下，它是做什么是？
-为obj对象定义或修改&quot;属性&quot;，并且返回
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2019/01/03/Vue的响应式原理/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 opening-statement">
-                <div class="col-md-4">
-                    <h3><a href="/2018/10/12/执行上下文/">执行上下文</a></h3>
-                    <span>
-                        <span class="post-meta">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
       <time datetime="2018-10-12T14:15:34.000Z" itemprop="datePublished">
           2018-10-12
       </time>
@@ -360,51 +196,128 @@ Object.defineProperty(obj,prop,descriptot)
     
     
 </span>
-                    </span>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                      
-                        执行上下文
-Javascript运行时，每进入一段可执行代码，将会产生一个执行上下文。
-
-定义很简单，但是执行上下文涉及到了许多Javascript的概念，所以有必要的去深入了解一下执行上下文。
-
-执行上下文的类型
-全局执行上下文
-函数执行上下文
-Eval函数执行上下文
-
-用一段代码来解析执行上下文 —来自Javascript权威指南
-我会使用伪代码来模仿这段代码的执行上下文
-123456789var scope = "global s
-                      
-                    </p>
-                    
-                    <p class="pull-right readMore">
-                        <a href="/2018/10/12/执行上下文/">Read More...</a>
-                    </p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <hr class="nogutter">
+                <h1>执行上下文</h1>
             </div>
         </div>
-        
-        <nav class="pagination" role="pagination">
-          
-          
-        </nav>
-    </div>
-</section>
-<section id="statement">
-    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
-        <div class="row">
-            <p></p>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="执行上下文"><a href="#执行上下文" class="headerlink" title="执行上下文"></a>执行上下文</h3><blockquote>
+<p><code>Javascript运行</code>时，每进入一段可执行代码，将会产生一个执行上下文。</p>
+</blockquote>
+<p>定义很简单，但是执行上下文涉及到了许多<code>Javascript的概念</code>，所以有必要的去深入了解一下执行上下文。</p>
+<hr>
+<h3 id="执行上下文的类型"><a href="#执行上下文的类型" class="headerlink" title="执行上下文的类型"></a>执行上下文的类型</h3><ul>
+<li>全局执行上下文</li>
+<li>函数执行上下文</li>
+<li>Eval函数执行上下文</li>
+</ul>
+<p>用一段代码来解析执行上下文 —来自<strong>Javascript权威指南</strong></p>
+<p>我会使用伪代码来模仿这段代码的执行上下文</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scope = <span class="string">"global scope"</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">checkscope</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">var</span> scope = <span class="string">"local scope"</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> scope;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> f();</span><br><span class="line">&#125;</span><br><span class="line">checkscope();</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当代码第一次运行，产生全局的执行上下文</p>
+</blockquote>
+<p>这是默认的执行上下文，它将会拥有一个<code>Window全局对象</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Stack = &#123;</span><br><span class="line">    global context </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 此时是在运行创建了一个全局执行环境，并且将此执行上下文放入了栈底</p>
+<ul>
+<li>全局执行上下文不会自动销毁</li>
+<li>全局执行上下文在退出程序时销毁</li>
+</ul>
+<blockquote>
+<p>关于堆栈</p>
+</blockquote>
+<p><code>Javascript</code>是单线程单一并发语言，这意味着它可以一次处理一个任务或一次处理一段代码。它有一个<strong>调用堆栈</strong>，它与堆之类的其他部分一起构成了Javascript并发模型（在V8内部实现）</p>
+<p>详细自行阅读 <strong>MDN并发模型</strong></p>
+<p>顺次执行，<code>checkscope()</code>函数执行，形成栈帧，压入执行上下文。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Stack = &#123;</span><br><span class="line">	checkscope context </span><br><span class="line">    global context </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>checkscope()</code>函数在执行内部代码时，执行return 语句 ，<code>fn()</code>函数被调用，形成栈帧。</p>
+<blockquote>
+<p>对于return 语句  它返回的是表达式的值</p>
+</blockquote>
+<p><code>fn()</code> 是一个调用表达式，当执行return 语句 调用表达式执行，其值被return返回。</p>
+<p>此时 的栈 应该是</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Stack = &#123;</span><br><span class="line">	fn context </span><br><span class="line">	checkscope context </span><br><span class="line">    global context </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>到这一步，执行上下文完成了一半。</p>
+<p>事情总有终结的一刻，程序也一样。</p>
+<p><code>fn函数</code>很顺利的完成了它的调用，没有再遇到其它函数的调用，被弹出执行栈销毁</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Stack = &#123;</span><br><span class="line">	checkscope context </span><br><span class="line">    global context </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>checkscope函数</code>也顺利的执行完毕，被弹出执行栈</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Stack = &#123;</span><br><span class="line">    global context </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>剩下的全局执行上下文，则会保护直到我们将程序关闭。</p>
+<p>至此，一个执行上下文执行完毕。</p>
+<p>那么，执行上下文究竟有何用处，后头有时间在详细介绍。</p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
         </div>
+        <nav class="m-pagination col-md-8 col-md-offset-2 col-sm-24" role="pagination">
+    
+    <a class="pull-left" href="/2019/01/03/Vue的响应式原理/" style="float: left;">
+        ← Vue的响应式原理
+    </a>
+    
+    
+</nav>
+
+        <div class="col-md-8 col-md-offset-2 col-sm-24"><script type="text/javascript">
+  /**
+   * 搜狐畅言
+   */
+
+  /*
+  document.write('<div id="SOHUCS" sid="' + window.location.pathname.slice(1) + '" ></div>');
+
+  window.onload = function () {
+    (function () {
+      var appid = 'cytXXXX';
+      var conf = 'prod_xxxxxxxxxxxxxxxxx';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      var loadJs = function (d, a, id) {
+        var c = document.getElementsByTagName("head")[0] || document.head || document.documentElement;
+        var b = document.createElement("script");
+        b.setAttribute("type", "text/javascript");
+        b.setAttribute("charset", "UTF-8");
+        b.setAttribute("src", d);
+        if (id) {
+          b.setAttribute("id", id);
+        }
+        if (typeof a === "function") {
+          if (window.attachEvent) {
+            b.onreadystatechange = function () {
+              var e = b.readyState;
+              if (e === "loaded" || e === "complete") {
+                b.onreadystatechange = null;
+                a()
+              }
+            }
+          } else {
+            b.onload = a
+          }
+        }
+        c.appendChild(b)
+      };
+
+      loadJs("https://changyan.sohu.com/upload/changyan.js", function () {
+        window.changyan.api.config({
+          appid: appid,
+          conf: conf
+        })
+      });
+    })();
+  }
+  */
+
+</script>
+</div>
     </div>
 </section>
-<!-- ============================ END Content =========================== -->
+
 
       
 <!-- ============================ Footer =========================== -->
